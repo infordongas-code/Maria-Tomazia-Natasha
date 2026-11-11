@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto de Vida | Maria, Tomazia e Natasha</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Nav -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Projeto de Vida 🚀</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#integrantes">Integrantes</a></li>
+                <li><a href="#sobre">Sobre o Projeto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Construindo Futuros, Transformando Vidas</h1>
+            <p>Três caminhos profissionais unidos por um propósito único: causar impacto positivo no mundo através da Neuropsicologia, Educação Física e Direito.</p>
+            <a href="#integrantes" class="btn">Conheça Nossas Trajetórias</a>
+        </div>
+    </section>
+
+    <!-- Integrantes Section -->
+    <section id="integrantes" class="cards-container">
+        <h2>Nossas Trajetórias Profissionais</h2>
+        <div class="cards-grid">
+            
+            <!-- Maria Card -->
+            <div class="card" onclick="showDetails('maria')">
+                <div class="card-icon">🧠</div>
+                <h3>Maria</h3>
+                <span class="tag">Neuropsicologia</span>
+                <p>Compreendendo as conexões cerebrais, comportamento e promoção da saúde mental.</p>
+                <button class="btn-card">Ver Projeto de Vida</button>
+            </div>
+
+            <!-- Tomazia Card -->
+            <div class="card" onclick="showDetails('tomazia')">
+                <div class="card-icon">🏃‍♀️</div>
+                <h3>Tomazia</h3>
+                <span class="tag">Educação Física</span>
+                <p>Promovendo bem-estar, hábitos saudáveis e transformação social através do movimento.</p>
+                <button class="btn-card">Ver Projeto de Vida</button>
+            </div>
+
+            <!-- Natasha Card -->
+            <div class="card" onclick="showDetails('natasha')">
+                <div class="card-icon">⚖️</div>
+                <h3>Natasha</h3>
+                <span class="tag">Direito</span>
+                <p>Defendendo a justiça, a igualdade social e a proteção dos direitos fundamentais.</p>
+                <button class="btn-card">Ver Projeto de Vida</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Modal para Detalhes -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title">Título</h3>
+            <p id="modal-body">Descrição detalhada aqui...</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Projeto de Vida — Maria, Tomazia & Natasha. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
